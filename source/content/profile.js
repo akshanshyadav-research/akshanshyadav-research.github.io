@@ -7,7 +7,7 @@ export const profile = {
   github: 'https://github.com/akshanshyadav-research',
   scholar: 'https://scholar.google.com/citations?user=sR6bOnoAAAAJ&hl=en',
   linkedin: 'https://www.linkedin.com/in/viraj-yadav-2000manu/',
-  bio: 'I study how to make AI models run efficiently on hardware. My research brings together Vision Transformer token pruning, FPGA acceleration, and hardware–software co-design to reduce computation while preserving accuracy.',
+  bio: 'I explore how AI models work internally and how that understanding can guide efficient hardware design. My research combines Vision Transformer token pruning, FPGA acceleration, and hardware–software co-design, connecting attention mechanisms and token interactions with ways to reduce computation while preserving accuracy.',
   about: 'At IIT Jodhpur, I work with Dr. Palash Das on efficient AI inference. My work spans model optimization, HLS accelerator design, and end-to-end deployment on AMD/Xilinx platforms, with an emphasis on the trade-offs between accuracy, latency, power, and hardware resources.',
 };
 
