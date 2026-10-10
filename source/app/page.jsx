@@ -1,4 +1,4 @@
-import { profile, publications, manuscripts, projects, education } from '../content/profile';
+import { profile, publications, projects, education } from '../content/profile';
 const base = process.env.NEXT_PUBLIC_BASE_PATH || '';
 const authorName = (authors) => authors.split('Akshansh Yadav').map((part, i) => <span key={i}>{i > 0 && <strong>Akshansh Yadav</strong>}{part}</span>);
 
@@ -19,7 +19,6 @@ export default function Home() {
       <Section id="publications" number="01" title="Publications">
         <div className="section-intro"><p>Journal articles and conference papers.</p><a href={profile.scholar}>Google Scholar profile</a></div>
         <ol className="publication-list">{publications.map((p, i) => <li className="publication" key={p.title}><div className="publication-index">{String(i+1).padStart(2,'0')}<span>{p.year}</span></div><article><div className="publication-meta"><span>{p.category}</span><span className="status">{p.status}</span></div><h3>{p.title}</h3><p className="authors">{authorName(p.authors)}</p><p className="venue">{p.venue}, {p.year}.</p>{p.summary && <p className="paper-summary">{p.summary}</p>}{(p.doi || p.code) && <div className="paper-links">{p.doi && <a href={`https://doi.org/${p.doi}`}>Paper / DOI</a>}{p.code && <a href={p.code}>Code</a>}</div>}</article></li>)}</ol>
-        <div className="manuscripts"><h3>Submitted Manuscripts</h3><p className="subsection-note">Work under review.</p><ul>{manuscripts.map(p => <li key={p.title}><h4>{p.title}</h4><p className="authors">{authorName(p.authors)}</p><p className="venue">{p.venue}.</p></li>)}</ul></div>
       </Section>
       <Section id="work" number="02" title="Research & Engineering">
         <p className="section-description">{profile.about}</p><div className="project-grid grid grid-cols-1 md:grid-cols-2">{projects.map(p => <article className="project" key={p.title}><p className="project-tags">{p.tags}</p><h3>{p.title}</h3><p>{p.description}</p>{p.link && <a className="project-link" href={p.link}>View repository</a>}</article>)}</div>
