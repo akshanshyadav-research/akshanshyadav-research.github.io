@@ -12,18 +12,13 @@ export const profile = {
 };
 
 export const publications = [
+  {"year":"2026","category":"Conference","status":"Accepted","title":"On-Chip Implementation of ANN Inference System for E-Nose-Based Fruit Ripening Monitoring","authors":"Joel Debbarma, Akshansh Yadav, Rajul Sharma, Rajeev Kumar, Palash Das, and Pydi Ganga M. Bahubalindruni","venue":"IEEE International Symposium on Smart Electronic Systems (iSES), NIT Goa, Goa, India"},
   { year: '2026', category: 'Journal', status: 'Accepted', title: 'Prune Before You Attend: Correlation-Driven Token Pruning for Hardware-Efficient ViT Acceleration', authors: 'Akshansh Yadav and Palash Das', venue: 'IEEE Transactions on Very Large Scale Integration (VLSI) Systems', doi: '10.1109/TVLSI.2026.3737685', summary: 'PearViT and G-PearViT use early correlation-based token pruning and spatial grouping, combined with attention-based refinement.' },
   { year: '2026', category: 'Journal', status: 'Published', title: 'GateAttn-ViT: Entropy-Gated, Attention-Guided Token Pruning for Resource-Efficient Vision Transformer Acceleration on FPGAs', authors: 'Akshansh Yadav and Palash Das', venue: 'Journal of Systems Architecture, vol. 177, article 103836', doi: '10.1016/j.sysarc.2026.103836', code: 'https://github.com/akshanshyadav-research/GateAttn-ViT', summary: 'Training-free entropy gating and multi-stage attention selection, co-designed with an FPGA accelerator.' },
   { year: '2026', category: 'Conference', status: 'Accepted', title: 'KTA-Attn ViT: A Hierarchical Token Pruning Framework for Accelerating ViTs', authors: 'Akshansh Yadav and Palash Das', venue: '44th IEEE International Conference on Computer Design (ICCD)', summary: 'Kendall Token Attribution removes redundant tokens before the encoder; hierarchical attention selection refines the remaining sequence.' },
   { year: '2026', category: 'Conference', status: 'Accepted', title: 'CSAP-ViT: Cascade Similarity–Attention Pruning for Accelerating ViTs on FPGA', authors: 'Akshansh Yadav and Palash Das', venue: 'IEEE Computer Society Annual Symposium on VLSI (ISVLSI)', summary: 'A cascade of cosine-similarity pruning and attention-based selection for efficient FPGA inference.' },
   { year: '2025', category: 'Conference', status: 'Accepted', title: 'G-SHIELD: Hardware Acceleration for Defending CNNs Against Adversarial Attacks', authors: 'Deepraj Majumdar, Akshansh Yadav, Dhiraj Raj, and Palash Das', venue: '11th IEEE International Symposium on Smart Electronic Systems (iSES)' },
   { year: '2025', category: 'Conference', status: 'Published', title: 'Hybrid Token Selector Based Accelerator for ViTs', authors: 'Akshansh Yadav, Anadi Goyal, and Palash Das', venue: 'Design, Automation & Test in Europe Conference (DATE)', summary: 'Content-aware keypoint selection in early layers and attention-based token selection in later layers, supported by custom FPGA modules.' },
-];
-
-export const manuscripts = [
-  { title: 'CRAFT: A Co-Designed Configurable Accelerator for Efficient DiT Inference via Adaptive Striding', authors: 'Anand Saxena, Akshansh Yadav, and Palash Das', venue: 'Submitted to DATE 2027' },
-  { title: 'FreqPress: A Lightweight Hardware Accelerator for Robust Defense Against White-Box Adversarial Attacks', authors: 'Deepraj Majumdar, Akshansh Yadav, and Palash Das', venue: 'Submitted to IEEE/ACM ESWEEK 2026' },
-  { title: 'Design and Implementation of an FPGA-Based Fruit Ripening Monitoring System Using E-Nose Technology', authors: 'Joel Debbarma, Akshansh Yadav, Rajul Sharma, Rajeev Kumar, Pydi Ganga Bahubalindruni, and Palash Das', venue: 'Submitted to IEEE Embedded Systems Letters, 2026' },
 ];
 
 export const projects = [
